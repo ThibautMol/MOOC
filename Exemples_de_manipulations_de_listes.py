@@ -19,3 +19,18 @@ print("type de u:",type(u))
 print("type de v:",type(v))
 print("type de x:",type(x))
 print("type de W:",type(w))
+
+def foo(liste):
+    return [liste, liste]
+
+x = [2,3]
+x = foo(x)
+print(x) #on aura deux listes dans une liste.
+
+
+def foo(liste):
+    return liste + liste
+
+x = [2,3]
+x = foo(x)
+print(x) #on aura une seule liste avec deux fois les éléments
